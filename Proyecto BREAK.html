@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros - Break</title>
+    <style>
+        /* Reset de margenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #005f8c;  /* Azul oscuro */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        /* Logo */
+        .navbar .logo img {
+            height: 50px; /* Tamaño del logo */
+        }
+
+        /* Contenedor principal */
+        .about-container {
+            background-color: #e6f7ff; /* Fondo azul claro */
+            padding: 50px 20px;
+            text-align: center;
+            color: #003d5c;  /* Azul oscuro */
+        }
+
+        /* Encabezado principal */
+        .about-container h1 {
+            font-size: 2.5em;
+            color: #005f8c;  /* Azul oscuro */
+            margin-bottom: 20px;
+        }
+
+        /* Subtítulo */
+        .about-container h2 {
+            font-size: 1.8em;
+            color: #007b99; /* Azul medio */
+            margin-bottom: 30px;
+        }
+
+        /* Texto introductorio */
+        .about-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilo de las secciones internas */
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .about-section h3 {
+            font-size: 1.6em;
+            color: #005f8c; /* Azul oscuro */
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            text-align: center;
+            color: #003d5c;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Estilo para la sección de Barrita */
+        .barrita-container {
+            background-color: #f2f9ff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .barrita-container h2 {
+            font-size: 2.5em;
+            color: #005f8c;
+            margin-bottom: 20px;
+        }
+
+        .barrita-container p {
+            font-size: 1.2em;
+            color: #003d5c;
+            margin-bottom: 30px;
+        }
+
+        .barrita-container video {
+            width: 80%;
+            max-width: 800px;
+            margin-top: 20px;
+            border: 3px solid #005f8c; /* Bordes azules */
+        }
+
+        /* Estilo de la misión */
+        .mission-container {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-container h2 {
+            font-size: 2em;
+            color: #005f8c;  /* Azul oscuro */
+            margin-bottom: 20px;
+        }
+
+        .mission-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de la visión */
+        .vision-container {
+            background-color: #005f8c;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .vision-container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .vision-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de contacto */
+        .contact-container {
+            background-color: #f4f4f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Botones */
+        .btn {
+            background-color: #005f8c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        /* Estilo para la sección de inicio */
+        .home-container {
+            background-color: #005f8c;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .home-container h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="proyecto logo.png" alt="Logo de Break"> <!-- Asegúrate de tener el archivo logo.png en tu carpeta -->
+        </div>
+        <div>
+            <a href="#home">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#products">Productos</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Sección "Inicio" -->
+    <div class="home-container" id="home">
+        <h2>Bienvenidos a Break</h2>
+        <p>Tu nuevo aliado en nutrición deportiva.</p>
+    </div>
+
+    <!-- Sección "Acerca de Nosotros" -->
+    <div class="about-container" id="about">
+        <h1>Acerca de Break</h1>
+        <h2>Conoce nuestra historia y misión</h2>
+        <p>
+            **Break** es un emprendimiento dedicado a la creación de barritas de cereal saludables, especialmente diseñadas para el mundo de la **nutrición deportiva**. Fundado por **Juan Cruz Labrunee** y **Juan Ignacio Robles**, Break nace con la misión de ofrecer productos innovadores que mejoren el rendimiento físico sin sacrificar el sabor ni la conveniencia.
+        </p>
+    </div>
+
+    <!-- Sección de Barrita -->
+    <div class="barrita-container" id="barrita">
+        <h2>Barrita</h2>
+        <p>Descubre el proceso detrás de nuestras deliciosas barritas.</p>
+        <video controls>
+            <source src="video de producto.mp4" type="video/mp4"> <!-- Asegúrate de tener el archivo de video en el lugar correcto -->
+            Tu navegador no soporta el formato de video.
+        </video>
+    </div>
+
+    <!-- Sección de Misión -->
+    <div class="mission-container">
+        <h2>Nuestra Misión</h2>
+        <p>
+            Nos comprometemos a ofrecer soluciones nutricionales de alta calidad que ayuden a mejorar el rendimiento físico de nuestros clientes, promoviendo un estilo de vida saludable. En Break, buscamos combinar ingredientes naturales con la innovación para ofrecer productos que impulsen el bienestar.
+        </p>
+    </div>
+
+    <!-- Sección de Visión -->
+    <div class="vision-container">
+        <h2>Nuestra Visión</h2>
+        <p>
+            Ser una marca líder en nutrición deportiva, expandiendo nuestra línea de productos y llegando a más personas que buscan mejorar su rendimiento físico sin comprometer su salud. Queremos ser el aliado confiable de quienes buscan alcanzar sus objetivos deportivos y de bienestar.
+        </p>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div class="contact-container" id="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
+        <a href="mailto:contacto@break.com" class="btn">Escríbenos</a>
+    </div>
+
+</body>
+</html>
